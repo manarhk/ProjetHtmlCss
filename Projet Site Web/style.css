@@ -1,0 +1,550 @@
+/* J'ai souvent réutilisé les mêmes classes c'est pourquoi l'organisation des parties n'est pas toujours présente ou bien organisée */
+/* Header Version Mobile*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height:1.5;
+    margin:0;
+    color:rgba(0, 0, 0, 0.731);
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header{
+    background: 
+    linear-gradient(170deg,rgba(123, 122, 122, 0.779),#e9d3bd,rgba(203, 203, 203, 0.601)),
+    url(img/blanc.jpg) center center / cover no-repeat;
+    color:rgb(255, 255, 255);
+}
+
+.topbar{
+    padding:18px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.nav-item:hover{
+    color:rgb(255, 128, 0);
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+.nav-item{
+    display: inline-block;
+    margin:0 15px;
+}
+
+.slogan{
+    padding:50px 0 70px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.slogan-bienvenue{
+    font-family:'Pinyon Script',serif;
+    color:rgb(255, 128, 0);
+    font-size:2.2rem;
+    display:block;
+}
+.slogan-nom{
+    display: block;
+    font-size: 2.5rem;
+    font-weight:700 ;
+    letter-spacing:5px ;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.slogan-boutique{
+    font-size:1rem;
+    font-weight: 300;
+    display:block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(122, 97, 78);
+}
+.nav-search{
+    border:solid 1px rgb(255, 136, 0);
+    padding:7px 10px;
+    margin-top:5px;
+}
+.nav-search:hover{
+    background: rgb(255, 136, 0);
+    color: white;
+}
+/* Fin Header */
+
+/* Section Promotion */
+.section-promo{
+    padding-top: 9px;
+}
+
+.promo{
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #93897D;
+    letter-spacing: 0.045rem;
+
+
+    
+}
+.promo span{
+    display: block;
+}
+.petit-container{
+    margin: 0 auto;
+    padding:0 20px;
+    max-width: 960px;
+}
+.container{
+    margin: 0 auto;
+    padding:0 20px;
+    max-width: 1150px;
+}
+
+.bloc{
+    margin-bottom: 50px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.titre{
+    font-size:1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:1rem 0 0 0;
+    margin-left: 1.4rem;
+}
+
+
+.offre{
+    color: rgb(24, 205, 255);
+
+}
+
+.titre span{
+    font-family: 'Pinyon Script', serif;
+    color: rgb(255, 136, 0);
+    font-size: 2.5rem;
+    display: block;
+    text-transform: none;
+    
+}
+
+.titre::before{
+    content:'';
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 131, 42);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.voirplus{
+    color: rgb(255, 116, 2);
+}
+
+.voirplus:hover{
+    text-decoration: underline;
+}
+
+.bloc-img{
+    border: solid 2px rgb(188, 182, 172);
+} 
+.bloc-img img{
+    display: block;
+}
+
+/* Qui sommes nous */ 
+.bloc-centre{
+    text-align: center;
+}
+
+.resume-item{
+    color: rgb(61, 51, 44);
+    margin-bottom: 30px;
+}
+.resume-titre{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: rgb(255, 128, 0);
+    font-weight: bold;
+    padding-bottom: 12px;
+
+}
+
+.resume p{
+    margin-top: 0;
+    font-size: 14px;
+    margin:0;
+}
+
+
+.resumeheader{
+    background:linear-gradient(170deg,rgba(123, 123, 123, 0.779),#e9d3bd,rgba(203, 203, 203, 0.601)),
+    url(img/blanc.jpg) center center / cover no-repeat;
+    color:rgb(255, 255, 255);
+    padding:70px;
+}
+
+
+.titrepdt{
+    font-size:1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:1rem 0 0 0;
+    margin-left: 20px;
+
+}
+.video{
+    width: 100%;
+}
+
+/* Fin qui sommes nous ? */
+
+/* Menu déroulant pour NOS DESIGNS */
+
+.navdesign {
+    position: relative;
+    display: inline-block;
+    }
+    .design-child {
+    display: none;
+    background-color:rgba(255, 255, 255, 0.327);
+    min-width:50px;
+    }
+    .design-child a {
+    color: rgb(249, 130, 11);
+    text-transform: none;
+    padding: 10px;
+    display: block;
+    }
+    
+    .navdesign:hover .design-child {
+    display: block;
+    }
+ /* Fin Menu déroulant DESIGNS */ 
+
+ /* Articles */
+
+    .description-art {
+        text-align: center;   
+        font-size: 18px;
+        color: rgb(141, 127, 112);
+    }
+    .pluschoix{
+        text-align: center;
+        color: rgb(255, 136, 0);
+    }
+    .article h3{
+        font-weight: 500;
+    }
+    .article img{
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+
+/* Fin articles */
+
+/* Footer */ 
+.footer{
+    background:linear-gradient(180deg,rgb(222, 214, 207),#d4c8b4fd,rgba(171, 162, 151, 0.738));
+    font-weight: 300;
+    color: white;
+    padding:40px 0px ;
+}
+
+.footer-titre{
+    color: rgb(255, 136, 0);
+    margin-bottom: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+}
+.colonne{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.colonne a{
+    text-decoration: underline;
+
+}
+.credits{
+    margin-left: 2rem;
+}
+/* Fin Footer */ 
+/* Contact */ 
+
+.contact{
+    font-size: 22px;
+    color: rgb(255, 137, 20);
+}
+.adresse{
+    margin-left: 30px;
+    text-decoration: underline;
+    color: rgb(154, 138, 120);
+    font-weight: normal;
+}
+
+.carte{
+    width: 100%;
+    height:300px;
+}
+.formulaire{
+    margin-left: 2rem;
+    color:rgb(147, 121, 87);
+    font-weight: 500;
+    line-height: 2.3rem;
+}
+
+ /* Header responsive version Bureau */
+@media only screen and (min-width:600px){
+   
+    html{
+        font-size: 20px;
+    }
+    body{
+        background: 
+        linear-gradient(to top, rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+    .topbar{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    .slogan{
+        padding:100px 0 170px;
+    }
+    .slogan-boutique{
+        font-size: 1.5rem;
+    }
+    .slogan-nom{
+        font-size: 4.3rem;
+        letter-spacing: 12px;
+        padding-top: 8px;
+        padding-bottom: 18px;
+    }
+    .slogan-bienvenue{
+        font-size:3.75rem;
+    }
+    .menu-button{
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+/* Fin Header Responsive */ 
+
+    /* Section Promo Responsive Version Bureau*/ 
+@media only screen and (min-width:960px){
+
+    .bloc{
+        margin-bottom:100px ;
+    }
+    .bloc-gauche, .bloc-droit{
+        display: flex;
+        align-items: center;
+    }
+    
+    .bloc-img{
+        width: 350px;
+        flex: none;
+        margin-left:30px;
+    }
+
+    .bloc-img img{
+        transform: translate(20px, 20px);
+    }
+    
+    .bloc-gauche .bloc-body{
+        margin-left: 94px;
+    }
+    
+    .bloc-droit .bloc-img img{
+        transform: translate(-20px,20px);
+    }
+ 
+    .bloc-droit .bloc-img{
+        width: 350px;
+        flex: none;
+        margin-right:30px;
+    }
+    
+    .bloc-droit .bloc-body{
+        margin-right: 94px;
+        order:-1 ;
+    }
+    
+    .titre::before{
+        margin-bottom:15px;
+    }
+
+    .voirplus{
+        display: block;
+        margin-top: 20px;
+
+    }
+    .bloc-body{
+        margin-left: 50px;
+    }
+    .bloc-centre{
+        padding:10px;
+    }
+    .resume{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        line-height:1.5rem;
+    }
+    .resume-item{
+        padding-left: 120px;
+        width: 50%;
+        margin-bottom: 100px;
+        color: rgb(61, 51, 44);
+        padding-right: 130px;
+
+    }
+    .resume-item p{
+        font-size: 20px;
+    }
+    .resume-titre{
+        margin-top: 0;
+        line-height: 1;
+        color: rgb(255, 131, 42);
+    }
+    .resume-item:nth-child(2n) {
+        padding-left: 100px;
+    }
+
+    .resume::before{
+        content: '';
+        position:absolute;
+        display: block;
+        top:10px;
+        left:50%;
+        width: 1000px;
+        height:700px;
+        border: solid 3px rgb(161, 154, 145);
+        transform: translate(-50%, -10%);
+    }
+    .resumeheader{
+            background:linear-gradient(170deg,rgba(123, 123, 123, 0.779),#e9d3bd,rgba(203, 203, 203, 0.601)),
+            url(img/blanc.jpg) center center / cover no-repeat;
+            color:rgb(255, 255, 255);
+            padding:70px;
+        }
+        .video{
+            width:763px ;
+            height:429px;
+            display:block;
+            margin:0 auto 35px auto;
+
+        }
+            
+        
+        /* Menu déroulant pour NOS DESIGNS */
+
+            .navdesign {
+            position: relative;
+            display: inline-block;
+            }
+            .design-child {
+            display: none;
+            background-color:rgba(255, 255, 255, 0.327);
+            min-width:50px;
+            }
+            .design-child a {
+            color: rgb(249, 130, 11);
+            text-transform: none;
+            padding: 10px;
+            display: block;
+            }
+            
+            .navdesign:hover .design-child {
+            display: block;
+            }
+             /* Fin Menu déroulant DESIGNS */ 
+
+             /* Responsives pages d'articles  */ 
+             
+            .nos-produits{
+                
+                border-radius: .5em;
+                padding: 10px;
+            }
+            .article{
+                width: 30%;
+                padding: 10px;
+                display: inline-block;
+                vertical-align: middle
+            }
+            .article img{
+                width:400px;
+            }
+            .pluschoix{
+                color: rgb(255, 131, 42);
+                text-align: center;
+            }
+
+            /* Footer */ 
+            .footer-colonnes{
+                display:flex;
+                justify-content: space-between;
+                margin-right: 50px;
+            }
+            .colonne{
+                width: 300px;
+                flex: none;
+            }
+            .colonne a{
+                text-decoration: underline;
+
+            }
+            .credits{
+                margin-left: 2rem;
+                font-size: 0.8rem;
+            }
+            .credits span{
+                font-weight: bold;
+            }
+            /*Fin footer */ 
+            /* Contact */
+            .carte{
+                height: 500px;
+            }
+            .adresse{
+                font-size: 1.5rem;
+            }
+            /* Fin contact */ 
+        }
+

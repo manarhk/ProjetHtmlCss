@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Nous contacter, l'Art de Lyon</title>
+        
+        <meta charset="UTF-8">
+        <meta name="Description" content="L'Art de Lyon vous propose des produits designés par nos soins mais aussi une personalisation selon vos choix de A à Z.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="/index.html"><img src="logo/bonlogo.png" alt="" width="150"></a>
+                </div>
+            
+                <!-- Barre de navigation -->
+                <nav class="navigation">
+                    <a href="index.html" class="nav-item">Accueil</a>
+                    <a href="presentation.html" class="nav-item">Qui sommes nous ?</a>
+                    <div class="navdesign">
+                        <span class="nav-item">Nos designs</span>
+                        <div class="design-child">
+                        <a href="baril.html">Barils</a>
+                        <a href="bball.html">Basketballs</a>
+                        <a href="bombe.html">Bombes</a>
+                        <a href="batte.html">Battes</a>
+                        <a href="livre.html">Livres</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item">Nous contacter</a>
+                    <form action="bombe.html" class="nav-item"><input type="text" class="nav-item nav-search" placeholder="Rechercher..."></form>
+                </nav>
+            </div>
+           </header> 
+        <section>
+            <div class="titre contact">
+            <h2> Où nous trouver ?</h2>
+            </div>
+            <div class="adresse">
+            <p>
+                29 Place Bellecour<br>
+                69002 Lyon<br>
+                France<br>
+            </p>
+            </div>
+            
+            <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.7068471100597!2d4.829921000000001!3d45.7570227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea531e2ec78f%3A0x75271f5d4007cac2!2s29%20Place%20Bellecour%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1609190865696!5m2!1sfr!2sfr" width="1200" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            
+        </section>
+        <div class="titre contact">
+        <h2>Nous envoyer un email</h2>
+        </div>
+        <section class="formulaire">
+        <p>Nous sommes là pour vous aider 7 jours sur 7 et répondrons dès que possible.</p>
+        <!-- Formulaire de contact-->
+        <form action="contact.html">
+
+               <div>
+                    <label for="emailinput">Votre email : </label>
+                    <input type="email" id="emailinput" placeholder="votre@email.fr" required>
+               </div>
+               <!-- Barre de choix : balise section (objet question) -->
+               <div>
+                    <label for="theme">En quoi consiste votre question ?</label>
+                    <select id="theme">
+                        <optgroup label="Livraison">
+                            <option>Où est ma commande ?</option>
+                            <option>Je veux modifier le lieu de livraison de ma commande</option>
+                            <option>Frais de douanes</option>
+                            <option>Options de Livraison</option>
+                        </optgroup>
+                        <optgroup label="Retours et Remboursements">
+                            <option>J'ai une question à propos de mon retour/remboursement</option>
+                            <option>J'ai une question à propos de mon retour/remboursement</option>
+                            <option>Comment puis-je retourner une commande ?</option>
+                        </optgroup>
+                        <optgroup label="Problèmes commande">
+                            <option>Mon produit est défectueux</option>
+                            <option>Je veux supprimer ma commande</option>
+                            <option>J'ai reçu un mauvais produit</option>
+                            <option>Il me manque un produit</option>
+                        </optgroup>
+                        <optgroup label="Paiement, Promo et Chèques Cadeaux">
+                            <option>J'ai une question au sujet d'un code de promotion</option>
+                            <option>Je rencontre un problème lors de la confirmation de paiement</option>
+                            <option>Options de paiement</option>
+                            <option>Chèques Cadeaux</option>
+                        </optgroup>
+                        <optgroup label="Produits et Stock">
+                            <option>Allez vous recevoir plus de stock ?</option>
+                            <option>J'ai une question au sujet d'un article</option>
+                        </optgroup>
+                        <optgroup label="...">
+                            <option>Autre</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message">Précisez votre question et donnez-nous toute autre information nécessaire : </label><br>
+                    <textarea name="message" id="message" cols="50" rows="5" placeholder="Votre message..."></textarea>
+                </div>
+                <button>Envoyer un email</button>
+                <button type="reset">Annuler</button>
+
+        </form>
+        
+        <!-- Fin du formulaire-->
+        <div class="titre contact">
+        <h2>Via nos réseaux sociaux</h2></div>
+        <ul>
+            <li>Contactez nous directement en MP sur <a href="https://www.instagram.com/l_art_de_lyon/">Instagram</a></li>
+            <li>Ou sur Snapchat : lartde_lyon</li>
+        </ul>
+        <img src="logo/snaplogo.png" alt="" width="100">
+        <img src="logo/Instagram-logo.png" alt="" width="176">
+        <img src="logo/Twitter-Logo.png" alt="" width="120">
+        </section>
+        
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-contenu">
+                <div class="footer-colonnes"> 
+                    <div class="colonne">
+                        <div class="footer-titre"><p>L'Art De Lyon</p></div><br>
+                        <a href="presentation.html">Qui sommes nous ?</a><br>
+                        <a href="contact.html">Contactez-nous</a>
+                    </div>
+                    <div class="colonne">
+                        <div class="footer-titre"><p>À propos</p></div><br>
+                        <a href="presentation.html">Conditions générales d'utilisations</a><br>
+                        <a href="presentation.html">Garanties Légales</a><br>
+                        <a href="presentation.html">Cookies</a>
+                    </div>
+                    <div class="colonne">
+                        <div class="footer-titre"><p>Suivez-nous</p></div><br>
+                            <a href="https://www.snapchat.com">Snapchat</a><br>
+                            <a href="https://www.instagram.com/l_art_de_lyon/">Instagram</a><br>
+                            <a href="https://twitter.com">Twitter</a>
+                          
+                    </div>
+                </div>
+                <div class="credits">
+                    <span>2021 L'ART DE LYON</span> All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
